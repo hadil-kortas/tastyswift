@@ -7,7 +7,7 @@ const CategoryPage = () => {
     return (
         <div className='flex flex-wrap' style={{ color: "#FFA500" }}>
             {pizzas.map((item) => (
-                <Link className='w-full h-[60vh] border-r-2 border-b-1 border-t-2 sm:w-1/2 lg:w-1/3 p-4 flex flex-col justify-between group even:bg-fuchsia-50'
+                <Link className='w-full h-[60vh] border-r-2 border-b-2 sm:w-1/2 lg:w-1/3 p-4 flex flex-col justify-between group even:bg-fuchsia-50'
                     style={{borderColor:"#ffa500"}}
                     href={`/product/${item.id}`}
                     key={item.id}
