@@ -6,7 +6,7 @@ const data = [
     {
         id: 1,
         title: "always fresh & always crispy & always hot",
-        image: "/slide1.png",
+        image: "/slide4.png",
     },
     {
         id: 2,
