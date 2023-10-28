@@ -1,8 +1,7 @@
-import { PrismaClient } from "@prisma/client";
+import prisma from "@/utils/connect";
 import { NextResponse } from "next/server";
 
 
-const prisma = new PrismaClient()
 
 //FETCH ALL CATEGORIES
 export const GET = async () => {
@@ -16,7 +15,7 @@ export const GET = async () => {
     } catch (err) {
         console.log(err);
         return new NextResponse(
-            JSON.stringify({ message: "Something went wreong!" }),
+            JSON.stringify({ message: "Something went wrong!" }),
             { status: 500 }
         );
     }
